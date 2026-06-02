@@ -44,13 +44,13 @@ L'application contient plusieurs fenêtres :
 
 ## Organisation du projet
 
-Le projet est organisé avec une structure MVC.
-mediatek86/
-├── bddmanager/
-├── dal/
-├── controller/
-├── model/
-└── view/
+Pour éviter de mettre tout le code au même endroit, j'ai rangé le projet dans plusieurs dossiers :
 
+- les formulaires sont dans view 
+- les classes principales sont dans model 
+- les contrôleurs servent à faire le lien entre l'affichage et les données 
+- les classes d'accès aux données sont dans dal 
+- la connexion à MySQL est dans bddmanager.
 
+Cela rend le projet plus clair et plus simple à modifier.
 
